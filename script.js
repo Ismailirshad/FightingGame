@@ -6,6 +6,14 @@ let p2NameDiv = document.getElementById('p2Name')
 let p1HealthDiv = document.getElementById('p1Health')
 let p2HealthDiv = document.getElementById('p2Health')
 
+// Sounds
+const p1AttackSound = document.getElementById("p1attack");
+const p1HealSound   = document.getElementById("p1heal");
+const p2AttackSound = document.getElementById("p2attack");
+const p2HealSound   = document.getElementById("p2heal");
+const victorySound  = document.getElementById("victory");
+
+
 const updateGame = (p1, p2, gameState) => {
   p1NameDiv.innerText = p1.name
   p2NameDiv.innerText = p2.name
